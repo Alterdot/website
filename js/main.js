@@ -17,9 +17,9 @@ var CRUMINA = {};
 		$pie_chart = $('.pie-chart'),
 		$header = $('#site-header'),
 		$counter = $('.counter'),
-		$countdown = $('.crumina-countdown'),
-		$countdown_number = $('.crumina-countdown-number'),
-		$progress_bar = $('.crumina-skills-item'),
+		$countdown = $('.adsite-countdown'),
+		$countdown_number = $('.adsite-countdown-number'),
+		$progress_bar = $('.adsite-skills-item'),
 		$primaryMenu = $('#primary-menu'),
 		$preloader = $('#hellopreloader');
 
@@ -423,7 +423,7 @@ var CRUMINA = {};
 				var $self = $(this);
 				var id = 'swiper-unique-id-' + idx;
 				$self.addClass(id + ' initialized').attr('id', id);
-				$self.closest('.crumina-module').find('.swiper-pagination').addClass('pagination-' + id);
+				$self.closest('.adsite-module').find('.swiper-pagination').addClass('pagination-' + id);
 
 				_this.$swipers[id] = new Swiper('#' + id, _this.getParams($self, id));
 				_this.addEventListeners(_this.$swipers[id]);
@@ -484,7 +484,7 @@ var CRUMINA = {};
 		},
 		addEventListeners: function ($swiper) {
 			var _this = this;
-			var $wrapper = $swiper.$el.closest('.crumina-module-slider');
+			var $wrapper = $swiper.$el.closest('.adsite-module-slider');
 
 			//Prev Next clicks
 			if ($swiper.params.prevNext) {
@@ -575,7 +575,7 @@ var CRUMINA = {};
      * ---------------------------*/
 
 	CRUMINA.select2Init = function () {
-		$('.woox--select').select2();
+		$('.adot--select').select2();
 	};
 
 	/* -----------------------------
@@ -594,7 +594,7 @@ var CRUMINA = {};
 			return state.text;
 		}
 		var $state = $(
-			'<span ><img class="woox-icon" sytle="display: inline-block;" src="img/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
+			'<span ><img class="adot-icon" sytle="display: inline-block;" src="img/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
 		);
 		return $state;
 	}
@@ -1145,5 +1145,34 @@ var CRUMINA = {};
 
 		$('.mCustomScrollbar').perfectScrollbar({wheelPropagation: false});
 	});
+
+	// Implementing a Hashing Router based on https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
+	function onRouteChanged() {
+		const hash = window.location.hash;
+		const routerView = document.getElementById("router-view");
+
+		if (!(routerView instanceof HTMLElement)) {
+			throw new ReferenceError("No router view element available for rendering");
+		}
+
+		switch (hash) {
+			case "#home":
+				//routerView.innerHTML = "<h1>Home page</h1>";
+				$('#router-view').load('views/home.html');
+				break;
+
+			case "#about":
+				//routerView.innerHTML = "<h1>About page</h1>";
+				$('#router-view').load('views/about.html');
+				break;
+
+			default:
+				//routerView.innerHTML = "<h1>404 - Page Not Found</h1>";
+				$('#router-view').load('views/home.html');
+				break;
+		}
+	}
+
+	window.addEventListener("hashchange", onRouteChanged);
 
 })(jQuery);
