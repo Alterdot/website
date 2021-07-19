@@ -2264,7 +2264,7 @@ textarea {
     transition: all .3s ease;
 }
 .header.headroom--not-top {
-    background-color: #2a2e37;
+    background-color: #12062f;
     -webkit-box-shadow: 15px 0 40px 0 rgba(0, 0, 0, .5);
     box-shadow: 15px 0 40px 0 rgba(0, 0, 0, .5);
     padding: 15px 0;
@@ -3174,7 +3174,7 @@ textarea {
         padding: 0;
         -webkit-border-radius: 0 0 10px 10px;
         border-radius: 0 0 10px 10px;
-        background-color: #2a2e37;
+        background-color: #12062f;
         -webkit-box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
         box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
     }
@@ -3223,7 +3223,7 @@ textarea {
         left: 0;
         position: static;
         border: none;
-        background: #2a2e37;
+        background: #12062f;
         -webkit-border-radius: 0;
         border-radius: 0;
     }
