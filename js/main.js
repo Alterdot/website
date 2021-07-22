@@ -1103,7 +1103,7 @@ var CRUMINA = {};
 			showSpeed: 0,
 			hideSpeed: 0,
 			trigger: "hover",
-			animation: "drop-up",
+			animation: "",
 			effect: "fade",
 			indicatorFirstLevel: "",
 			indicatorSecondLevel: ""
