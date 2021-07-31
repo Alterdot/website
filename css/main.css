@@ -1,0 +1,36 @@
+.menu-social-item {
+    max-width: 100%;
+    max-height: 110px;
+}
+
+.menu-medium-item {
+    max-height: 105px;
+}
+
+.centered-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.always-display {
+    display: block !important;
+}
+
+.menu-column {
+    padding: 50px;
+}
+
+.menu-column, .menu-column a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .menu-column {
+        display: flex !important;
+        padding: 16px;
+    }
+}
