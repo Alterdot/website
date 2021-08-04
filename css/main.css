@@ -34,3 +34,17 @@
         padding: 16px;
     }
 }
+
+.primary-menu-menu li:first-of-type {
+    padding: 20px 24px 22px 24px;
+}
+
+#access-blockchain-domain {
+    padding: 2px 0px 0px 5px;
+    border-radius: 12px;
+    background-color: #190411da;
+    caret-color: unset;
+    margin-bottom: unset;
+    font-weight: 400;
+    width: 10.7vw;
+}

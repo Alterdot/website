@@ -4932,11 +4932,11 @@ select.form-control {
 }
 .adsite-flying-balls:after {
     bottom: 0;
-    box-shadow: inset 0 -150px 119px -40px #2f092e;
+    box-shadow: inset 0 -120px 100px -50px #2f092e;
 }
 .adsite-flying-balls:before {
     top: 0;
-    box-shadow: inset 0 150px 119px -40px #2f092e;
+    box-shadow: inset 0 120px 100px -50px #2f092e;
 }
 .particles-js-canvas-el {
     position: absolute;

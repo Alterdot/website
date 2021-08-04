@@ -1144,6 +1144,31 @@ var CRUMINA = {};
 		CRUMINA.preloader();
 
 		$('.mCustomScrollbar').perfectScrollbar({wheelPropagation: false});
+
+		$('#access-blockchain-domain').on('keypress', function (e) {
+			if (e.key === 'Enter') {
+				let searchBar = this;
+				let domain = searchBar.value;
+
+				searchBar.value = null;
+
+				$.ajax({
+					url: `https://explorer.alterdot.network/api/resolvedomain?name=${domain}`,
+					type: 'GET',
+					success: function(data) { 
+						if (data !== "Blockchain domain name not found!") {
+							window.open(`https://ipfs.io/ipfs/${data}`);
+							searchBar.placeholder = "Lookup Blockchain Domain";
+						} else {
+							searchBar.placeholder = "Domain Not Found";
+						}
+					},
+					error: function() {
+						searchBar.placeholder = "Service Unavailable :(";
+					}
+				});
+			}
+		});
 	});
 
 	// Implementing a Hashing Router based on https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
