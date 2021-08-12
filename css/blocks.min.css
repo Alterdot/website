@@ -267,15 +267,15 @@
     fill: #16181d;
 }
 .btn--dark {
-    border-color: #1c1f24;
-    background-color: #1c1f24;
-    color: #666d7a;
+    border-color: #16181d;
+    background-color: #16181d;
+    color: #EE582E;
 }
 .btn--dark .adot-icon {
     fill: #666d7a;
 }
 .btn--dark:hover {
-    color: #fff;
+    color: #16181d;
 }
 .btn--dark:hover .adot-icon {
     fill: #fff;

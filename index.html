@@ -86,8 +86,24 @@
 
 				<ul class="primary-menu-menu">
 
-					<li>
-						<input type="text" id="access-blockchain-domain" placeholder="Lookup Blockchain Domain">
+					<li class="menu-item-has-mega-menu">
+						<a href="#about">Search</a>
+						<div class="megamenu">
+							<div class="megamenu-row">
+								<div class="col-lg-2">
+
+								</div>
+								<div class="col-lg-6">
+									<div class="input-with-btn-inline">
+										<input id='name' name="name" placeholder="Lookup your domain here" type="text" value="">
+										<button class="btn btn--large btn--dark">Search</button>
+									</div>
+								</div>
+								<div class="col-lg-4">
+
+								</div>
+							</div>
+						</div>
 					</li>
 
 					<li>
@@ -234,207 +250,47 @@
 						</ul>
 					</li>
 
-					<!--<li class="menu-item-has-mega-menu menu-item-has-children">
-						<a href="#">Documents</a>
-
-						<div class="megamenu megamenu-with-slider">
-
-							<div class="adsite-module adsite-module-slider slider-item--equal-height">
-								<div class="row">
-									<div class="col-lg-3">
-										<div class="adsite-module adsite-heading heading--with-decoration heading--h5">   <h5 class="heading-title">Alterdot Documentation</h5>   <div class="heading-text">Starting your wallet, masternode setup, all of our documentation can be found here.</div></div>
-										<div class="swiper-btn-wrap">
-											<div class="swiper-btn-prev">
-												<svg class="adot-icon icon-line-arrow-left">
-													<use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-left"></use>
-												</svg>
-											</div>
-
-											<div class="swiper-btn-next">
-												<svg class="adot-icon icon-line-arrow-right">
-													<use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-right"></use>
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-9">
-										<div class="swiper-container" data-show-items="3" data-prev-next="1">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<a href="documentation/wallets" class="adsite-module adsite-event-item">
-														<div class="event-thumb bg-event1">
-															<div class="overlay"></div>
-														</div>
-														<div class="event-content">
-															<h6 class="event-title">Downloading & starting your wallet</h6>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a href="documentation/mnsetup" class="adsite-module adsite-event-item">
-														<div class="event-thumb bg-event2">
-															<div class="overlay"></div>
-														</div>
-														<div class="event-content">
-															<h6 class="event-title">Masternode Setup Guide</h6>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide">
-													<a href="008_event_register.html" class="adsite-module adsite-event-item">
-														<div class="event-thumb bg-event3">
-															<div class="overlay"></div>
-														</div>
-														<div class="event-content">
-															<div class="event-date">
-																<svg class="adot-icon icon-school-calendar">
-																	<use xlink:href="svg-icons/sprites/icons.svg#icon-school-calendar"></use>
-																</svg>
-																March 16, 2018
-															</div>
-															<h6 class="event-title">Is your business ready for a production blockchain rollout?</h6>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</li>-->
-
-					<!--<li class="menu-item-has-mega-menu menu-item-has-children">
-						<a href="#">Guides</a>
-						<div class="megamenu">
-							<div class="megamenu-row">
-
-								<div class="col4">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Standard Pages</h5>
-										</li>
-										<li>
-											<a href="009_news.html">News Page</a>
-										</li>
-										<li>
-											<a href="010_news_details.html">News Details</a>
-										</li>
-										<li>
-											<a href="012_page_not_found.html">Not Found</a>
-										</li>
-										<li>
-											<a href="028_typography.html">Typography</a>
-										</li>
-
-									</ul>
-								</div>
-								<div class="col4">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Elements</h5>
-										</li>
-										<li>
-											<a href="013_pricing_tables.html">Pricing Tables</a>
-										</li>
-										<li>
-											<a href="014_forms.html">Forms</a>
-										</li>
-										<li>
-											<a href="015_quotes.html">Quotes</a>
-										</li>
-										<li>
-											<a href="016_testimonial_styles.html">Testimonials</a>
-										</li>
-										<li>
-											<a href="017_tabs.html">Tabs</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col4">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Elements</h5>
-										</li>
-										<li>
-											<a href="018_tables.html">Tables</a>
-										</li>
-										<li>
-											<a href="019_expert_hover_effects.html">Experts</a>
-										</li>
-										<li>
-											<a href="029_colors.html">Colors</a>
-										</li>
-										<li>
-											<a href="021_benefits.html">Benefits</a>
-										</li>
-										<li>
-											<a href="022_accordion_toggle.html">Accordions</a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="col4">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Elements</h5>
-										</li>
-										<li>
-											<a href="023_alerts_message.html">Alerts</a>
-										</li>
-										<li>
-											<a href="024_progress_bars.html">Progress bars</a>
-										</li>
-										<li>
-											<a href="025_button_styles.html">Buttons</a>
-										</li>
-										<li>
-											<a href="026_counters_and_timers.html">Counters</a>
-										</li>
-										<li>
-											<a href="027_headings.html">Headings</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</li>-->
-
 					<li class="menu-item-has-mega-menu menu-item-has-children">
 						<a href="#">Social</a>
-						<div class="megamenu megamenu-bg megamenu-bg2">
+						<div class="megamenu megamenu-bg2">
 
 							<div class="megamenu-row centered-row">
 
 								<div class="menu-column">
-									<a href="https://discord.com/invite/86eTp6m7p9">
-										<img class="menu-social-item" src="img/discord_logo.png" alt="image">
+									<a href="https://discord.com/invite/86eTp6m7p9" target="_blank">
+										<img class="menu-social-item" src="img/discord.png" alt="image">
 									</a>
 								</div>
 
 								<div class="menu-column">
-									<a href="https://twitter.com/alter_dot">
-										<img class="menu-social-item" src="img/twitter_logo.png" alt="image">
+									<a href="https://twitter.com/alter_dot" target="_blank">
+										<img class="menu-social-item" src="img/twitter.png" alt="image">
 									</a>
 								</div>
 								
 								<div class="menu-column">
-									<a href="https://alter-dot.medium.com/">
-										<img class="menu-social-item menu-medium-item" src="img/medium_logo.svg" alt="image">
+									<a href="https://alter-dot.medium.com/" target="_blank">
+										<img class="menu-social-item menu-medium-item" src="img/medium.png" alt="image">
 									</a>
 								</div>
 								
 								<div class="menu-column">
-									<a href="https://bitcointalk.org/index.php?topic=5217044">
-										<img class="menu-social-item menu-medium-item" src="img/bitcointalk_logo.png" alt="image">
+									<a href="https://bitcointalk.org/index.php?topic=5217044" target="_blank">
+										<img class="menu-social-item menu-medium-item" src="img/bitcoin.png" alt="image">
+									</a>
+								</div>
+
+								<div class="menu-column">
+									<a href="https://github.com/alterdot" target="_blank">
+										<img class="menu-social-item menu-medium-item" src="img/github.png" alt="image">
 									</a>
 								</div>
 								
 							</div>
 						</div>
 					</li>
+
+
 				</ul>
 
 			</nav>
