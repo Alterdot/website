@@ -2301,6 +2301,7 @@ textarea {
 }
 .site-logo img {
     margin-right: 13px;
+    margin-bottom: 6px;
 }
 .site-logo .adot-icon {
     width: 100px;
@@ -2595,10 +2596,10 @@ textarea {
         -ms-transform-origin: unset;
         transform-origin: unset;
     }
-}@media (max-width:1300px) {
+}@media (max-width:1400px) {
     .site-logo img {
         margin-right: 8px;
-        max-width: 40px;
+        max-width: 160px;
     }
     .site-logo .adot-icon {
         width: 60px;
@@ -2608,17 +2609,12 @@ textarea {
         padding: 15px 0;
     }
     .site-logo {
-        width: 100%;
+        width: 60%;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
         margin-bottom: 10px;
-    }
-    .header-content-wrapper {
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     }
 }.primary-menu, .primary-menu * {
      box-sizing: border-box;
@@ -2660,6 +2656,11 @@ textarea {
     background-color: transparent;
     min-width: 6vw;
     text-align: center;
+}
+@media (min-width: 2000px) {
+    .primary-menu-menu>li {
+        min-width: 120px;
+    }
 }
 .primary-menu-menu>li>a {
     position: relative;
@@ -2729,9 +2730,6 @@ textarea {
     margin-top: 0;
 }
 @media (max-width:768px) {
-    .site-logo img {
-        max-width: 40px;
-    }
     .primary-menu-menu ul.sub-menu, .primary-menu-menu ul.sub-menu li ul.sub-menu {
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -3168,6 +3166,9 @@ textarea {
     .primary-menu-menu>li {
         padding: 20px 10px;
     }
+    #bdns-search {
+        font-size: 14px;
+    }
 }@media (max-width:1023px) {
     .primary-menu-responsive.primary-menu {
         overflow: visible;
@@ -3199,7 +3200,7 @@ textarea {
         padding: 0;
         -webkit-border-radius: 0 0 10px 10px;
         border-radius: 0 0 10px 10px;
-        background-color: #12062f;
+        background-image: linear-gradient(to top, #270722, #1d0518);
         -webkit-box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
         box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
     }
@@ -3234,6 +3235,15 @@ textarea {
         border-bottom: solid 1px rgba(255, 186, 0, .1);
         font-weight: 900;
     }
+    .primary-menu-responsive .primary-menu-menu>li:first-of-type {
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px rgba(255, 186, 0, .1);
+    }
+    #bdns-search {
+        height: 32px;
+        width: 96%;
+    }
     .primary-menu-responsive .primary-menu-menu ul.sub-menu.sub-menu--with-icons li .icon-arrow-right-line, .primary-menu-responsive .primary-menu-menu>li>a:before, .primary-menu-responsive .product-item-content .title {
         display: none;
     }
@@ -3248,7 +3258,7 @@ textarea {
         left: 0;
         position: static;
         border: none;
-        background: #12062f;
+        background: 1d0518;
         -webkit-border-radius: 0;
         border-radius: 0;
     }
@@ -3327,17 +3337,17 @@ textarea {
         -webkit-border-radius: 0;
         border-radius: 0;
     }
-    .primary-menu-responsive .primary-menu-menu>li>.megamenu .megamenu-row [class*=col], nav.primary-menu-responsive li.menu-item-has-mega-menu ul.mega-menu-row li.mega-menu-col {
-        float: none;
-        display: block;
-        width: 100%!important;
-        margin-left: 0;
-        margin-top: 0;
-    }
     .primary-menu-responsive .primary-menu-menu>li>.megamenu .megamenu-row [class*=col], nav.primary-menu-responsive li.menu-item-has-mega-menu ul.mega-menu-row li.mega-menu-col-50 {
         float: none;
         display: block;
         width: 50%!important;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .primary-menu-responsive .primary-menu-menu>li>.megamenu .megamenu-row [class*=col], nav.primary-menu-responsive li.menu-item-has-mega-menu ul.mega-menu-row li.mega-menu-col {
+        float: none;
+        display: block;
+        width: 100%!important;
         margin-left: 0;
         margin-top: 0;
     }
@@ -3353,8 +3363,13 @@ textarea {
         padding: 10px 16px!important;
     }
     .primary-menu-responsive .primary-menu-menu>li.search form input[type=text], .primary-menu-responsive .primary-menu-tabs-content, .primary-menu-responsive .primary-menu-tabs-nav {
-        width: 100%}
-}.action-link, .sub-footer a {
+        width: 100%
+    }
+    .header-content-wrapper {
+        margin-top: 6px;
+    }
+}
+.action-link, .sub-footer a {
      font-weight: 700;
  }
 .tabs ul li, .tabs ul li a {

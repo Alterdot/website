@@ -1167,7 +1167,7 @@
     color: #c3c9d4;
 }
 .alert-notice .alert-icon {
-    border-color: #12062F;
+    border-color: #3C0B3B;
 }
 .alert-notice .alert-icon .adot-icon {
     fill: #666d7a;
@@ -1261,10 +1261,10 @@
     background-color: #20232a;
 }
 .alert--with-bg.alert-notice .alert-icon {
-    background-color: #12062F;
+    background-color: #3C0B3B;
 }
 .alert--with-bg.alert-notice .icon-close .adot-icon {
-    fill: #12062F;
+    fill: #3C0B3B;
 }
 .alert--with-bg.alert-danger {
     background-color: #ff3133;
@@ -2582,7 +2582,7 @@ table>tbody>tr.danger>td, table>tbody>tr.danger>th, table>tbody>tr>td.danger, ta
 .btn-next .adot-icon, .btn-prev .adot-icon, .swiper-btn-next .adot-icon, .swiper-btn-prev .adot-icon {
     width: 33px;
     height: 33px;
-    fill: #12062F;
+    fill: #3C0B3B;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     display: block;

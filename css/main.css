@@ -39,12 +39,17 @@
     padding: 20px 24px 22px 24px;
 }
 
-#access-blockchain-domain {
-    padding: 2px 0px 0px 5px;
+#bdns-search {
+    padding: 2px 0px 0px 7px;
     border-radius: 12px;
     background-color: #190411da;
     caret-color: unset;
     margin-bottom: unset;
     font-weight: 400;
-    width: 10.7vw;
+    width: 200px;
+}
+@media (max-width: 1200px) {
+    #bdns-search {
+        width: 140px;
+    }
 }

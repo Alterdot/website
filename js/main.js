@@ -1145,7 +1145,7 @@ var CRUMINA = {};
 
 		$('.mCustomScrollbar').perfectScrollbar({wheelPropagation: false});
 
-		$('#access-blockchain-domain').on('keypress', function (e) {
+		$('#bdns-search').on('keypress', function (e) {
 			if (e.key === 'Enter') {
 				let searchBar = this;
 				let domain = searchBar.value;
