@@ -35,7 +35,7 @@
     }
 }
 
-.primary-menu-menu li:first-of-type {
+.primary-menu-menu>li:first-of-type {
     padding: 20px 24px 22px 24px;
 }
 
@@ -106,4 +106,26 @@
 .features-item:hover .feature-bottom {
     opacity: 1;
     margin-bottom: 0%;
+}
+
+.ecosystem-menu img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.ecosystem-menu li a {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex !important;
+}
+
+.ecosystem-menu h5 {
+    text-align: left;
+}
+
+.ecosystem-menu .megamenu {
+    width: 60% !important;
+    right: 0 !important;
+    left: unset !important;
 }
