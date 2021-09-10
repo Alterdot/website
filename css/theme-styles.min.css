@@ -2063,8 +2063,12 @@ progress, sub, sup {
     -webkit-transition: all .3s ease;
 }
 @media (max-width:1200px) {
+    .responsive-width-75 {
+        max-width: 75%;
+    }
     .responsive-width-50 {
-        max-width: 50%}
+        max-width: 50%
+    }
     .responsive-align-center {
         text-align: center;
     }
