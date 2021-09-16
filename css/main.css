@@ -123,11 +123,16 @@
     left: unset !important;
 }
 
+#get-started {
+    padding-left: 40px;
+}
+
 .supported-platforms {
     display: flex;
     align-items: center;
     position: relative;
     bottom: 68px;
+    max-width: fit-content;
 }
 
 .wallet-container .supported-platforms {
@@ -135,7 +140,7 @@
 }
 
 .extension-container .supported-platforms {
-    left: calc(25% - 16px);
+    left: calc(22% - 16px);
 }
 
 .wallet-container>h3 {
@@ -146,34 +151,13 @@
     margin-top: 22px;
 }
 
-.chrome-logo {
-    left: 20px;
-    width: 82px;
-    height: 82px;
+.supported-platforms a {
+    margin: 0px 4px;
 }
 
-.brave-logo {
-    margin-left: 16px;
-    width: 78px;
-    height: 86px;
-}
-
-.windows-logo {
-    left: 20px;
-    width: 82px;
-    height: 82px;
-}
-
-.linux-logo {
-    margin-left: 20px;
-    width: 66px;
-    height: 82px;
-}
-
-.mac-logo {
-    margin-left: 14px;
-    width: 82px;
-    height: 82px;
+.supported-platforms a, .sup-platform {
+    height: 76px;
+    width: 76px;
 }
 
 .source-code {
@@ -186,7 +170,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 14px;
     border: 2px solid white;
 }
 
@@ -200,14 +183,17 @@
         left: calc(10% - 16px);
     }
     .extension-container .supported-platforms {
-        left: calc(28% - 16px);
+        left: calc(25% - 16px);
     }
     .wallet-container>h3,
     .wallet-container>img {
         margin-top: 0px;
     }
+    #get-started {
+        padding-left: unset;
 }
-@media (max-width: 992px) {
+}
+@media (max-width: 991px) {
     .features-section {
         height: 900px;
         display: block;
@@ -235,20 +221,15 @@
     .features-item:hover .feature-top {
         margin-top: -35%;
     }
+    .supported-platforms a, .sup-platform {
+        height: 64px;
+        width: 64px;
+    }
 }
 @media (max-width: 768px) {
     .menu-column {
         display: flex !important;
         padding: 16px;
-    }
-    .chrome-logo {
-        width: 64px;
-        height: 64px;
-    }
-    
-    .brave-logo {
-        width: 62px;
-        height: 68px;
     }
 }
 @media (max-width: 560px) {
