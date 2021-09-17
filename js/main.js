@@ -1201,3 +1201,4 @@ var CRUMINA = {};
 	window.addEventListener("hashchange", onRouteChanged);
 
 })(jQuery);
+

@@ -2576,6 +2576,19 @@ table>tbody>tr.danger>td, table>tbody>tr.danger>th, table>tbody>tr>td.danger, ta
 .btn-next:hover .adot-icon, .btn-prev:hover .adot-icon, .swiper-btn-next:hover .adot-icon, .swiper-btn-prev:hover .adot-icon {
     fill: #F44D32;
 }
+
+.timeline-btn-prev .adot-icon, .timeline-btn-next .adot-icon {
+    width: 33px;
+    height: 33px;
+    fill: #F44D32;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: block;
+}
+.timeline-btn-prev:hover .adot-icon, .timeline-btn-next:hover .adot-icon {
+    fill: #FFF;
+}
+
 .btn-next.btn--round, .btn-prev.btn--round, .swiper-btn-next.btn--round, .swiper-btn-prev.btn--round {
     border: 3px solid transparent;
 }
@@ -3867,6 +3880,17 @@ table>tbody>tr.danger>td, table>tbody>tr.danger>th, table>tbody>tr>td.danger, ta
 .select2.input--with-border:focus, input.input--with-border:focus, select.input--with-border:focus, textarea.input--with-border:focus {
     border-color: #F44D32;
 }
+
+.input--active {
+    background-color: transparent;
+    color: #808080;
+    border: 2px solid #333333;
+}
+.input--active:focus {
+    border: 2px solid #F44D32;
+    color: #ffffff;
+}
+
 .adot-icon {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
