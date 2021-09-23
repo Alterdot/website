@@ -1,40 +1,22 @@
 (function () {
 
   // VARIABLES
-  const timeline = document.querySelector(".timeline ol"),
-  elH = document.querySelectorAll(".timeline li > div"),
-  arrows = document.querySelectorAll(".timeline .arrows .arrow"),
-  arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
-  arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
-  firstItem = document.querySelector(".timeline li:first-child"),
-  lastItem = document.querySelector(".timeline li:last-child"),
-  xScrolling = 280,
+  const timeline = document.querySelector(".timeline"),
+  arrows = document.querySelectorAll("#roadmap .arrows .arrow"),
+  arrowPrev = document.querySelector("#roadmap .arrows .arrow__prev"),
+  arrowNext = document.querySelector("#roadmap .arrows .arrow__next"),
+  firstItem = document.querySelector("#roadmap p:first-child"),
+  lastItem = document.querySelector("#roadmap p:last-child"),
+  xScrolling = 420,
   disabledClass = "disabled";
 
   // START
   window.addEventListener("load", init);
 
   function init() {
-    setEqualHeights(elH);
     animateTl(xScrolling, arrows, timeline);
     setSwipeFn(timeline, arrowPrev, arrowNext);
     setKeyboardFn(arrowPrev, arrowNext);
-  }
-
-  // SET EQUAL HEIGHTS
-  function setEqualHeights(el) {
-    let counter = 0;
-    for (let i = 0; i < el.length; i++) {
-      const singleHeight = el[i].offsetHeight;
-
-      if (counter < singleHeight) {
-        counter = singleHeight;
-      }
-    }
-
-    for (let i = 0; i < el.length; i++) {
-      el[i].style.height = `${counter}px`;
-    }
   }
 
   // CHECK IF AN ELEMENT IS IN VIEWPORT
@@ -86,7 +68,7 @@
         setTimeout(() => {
           isElementInViewport(firstItem) ? setBtnState(arrowPrev) : setBtnState(arrowPrev, false);
           isElementInViewport(lastItem) ? setBtnState(arrowNext) : setBtnState(arrowNext, false);
-        }, 1100);
+        }, 250);
 
         counter++;
       });

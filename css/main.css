@@ -242,241 +242,172 @@
     }
 }
 
-/* TIMELINE
+/* Roadmap Arrows
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline {
-    white-space: nowrap;
-    overflow-x: hidden;
-}
-
-.timeline ol {
-    font-size: 0;
-    width: 100vw;
-    padding-top: 310px;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 250px;
-    transition: all 1s;
-}
-
-.timeline ol li {
-    position: relative;
-    display: inline-block;
-    list-style-type: none;
-    width: 160px;
-    height: 3px;
-    background: #fff;
-}
-
-.timeline ol li:last-child {
-    width: 280px;
-}
-
-.timeline ol li:not(:first-child) {
-    margin-left: 14px;
-}
-
-.timeline ol li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 1px);
-    bottom: 0;
-    width: 12px;
-    height: 12px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: #ee5b2d;
-}
-
-.timeline ol li div {
-    position: absolute;
-    left: calc(100% + 7px);
-    width: 280px;
-    padding: 15px;
-    font-size: 1rem;
-    white-space: normal;
-    color: black;
-    background: white;
-}
-
-.timeline ol li div::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.timeline ol li:nth-child(odd) div {
-    top: -16px;
-    transform: translateY(-100%);
-}
-
-.timeline ol li:nth-child(odd) div::before {
-    top: 100%;
-    border-width: 8px 8px 0 0;
-    border-color: white transparent transparent transparent;
-}
-
-.timeline ol li:nth-child(even) div {
-    top: calc(100% + 16px);
-}
-
-.timeline ol li:nth-child(even) div::before {
-    top: -8px;
-    border-width: 8px 0 0 8px;
-    border-color: transparent transparent transparent white;
-}
-
-.timeline time {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-
-/* TIMELINE ARROWS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline .arrows {
+#roadmap .arrows {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 34px;
 }
-.timeline .arrow {
+#roadmap .arrow {
     background: transparent;
 }
 
-.timeline .arrows .arrow__prev {
+#roadmap .arrows .arrow__prev {
     margin-right: 20px;
 }
 
-.timeline .disabled {
+#roadmap .disabled {
     opacity: .5;
 }
 
-.timeline .arrows img {
+#roadmap .arrows img {
     width: 45px;
     height: 45px;
 }
 
-
-/* GENERAL MEDIA QUERIES
+/* Large Window Roadmap
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 920px) {
-    .timeline ol,
-    .timeline ol li {
-        width: auto;
+@media (min-width: 1200px) {
+    #roadmap {
+        overflow-x: hidden;
+        margin-bottom: 140px;
     }
-
-    .timeline ol {
-        padding: 0;
-        transform: none !important;
+    .timeline, .timeline * {
+        transition: all 0.2s ease;
     }
-
-    .timeline ol li {
-        display: block;
-        height: auto;
-        background: transparent;
+    .timeline {
+        display: inline-flex;
+        flex-flow: row;
     }
-
-    .timeline ol li:first-child {
-        margin-top: 25px;
+    .timeline p {
+        font-size: 1em;
+        line-height: 1.75em;
+        border-right: 3px solid;
+        border-image: linear-gradient(to top, #ef4334 0%, #d53a9d 100%);
+        border-image-slice: 1;
+        border-width: 3px;
+        margin: 0;
+        padding: 40px;
+        counter-increment: section;
+        position: relative;
+        color: #34435e;
+        width: 420px;
+        height: 320px;
     }
-
-    .timeline ol li:not(:first-child) {
-        margin-left: auto;
+    .timeline p:before {
+          content: '';
+          position: absolute;
+          border-radius: 4px;
+          height: 24px;
+          width: 6px;
+          background-color: #eaeaea;
     }
-
-    .timeline ol li div {
-        width: 94%;
-        height: auto !important;
-        margin: 0 auto 25px;
+    .timeline p:nth-child(odd) {
+        border-top: 3px solid;
     }
-
-    .timeline ol li div {
-        position: static;
+    .timeline p:nth-child(odd):before {
+        right: 40%;
+        top: -14px;
     }
-
-    .timeline ol li:nth-child(odd) div {
-        transform: none;
+    .timeline p:nth-child(even) {
+        border-bottom: 3px solid;
     }
-
-    .timeline ol li:nth-child(odd) div::before,
-    .timeline ol li:nth-child(even) div::before {
-        left: 50%;
-        top: 100%;
-        transform: translateX(-50%);
-        border: none;
-        border-left: 1px solid white;
-        height: 25px;
+    .timeline p:nth-child(even):before {
+        right: 40%;
+        bottom: -14px;
     }
+    .timeline p:nth-child(2) {
+        border-left: 3px solid;
+    }
+    .timeline p:first-child {
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-image: linear-gradient(to right, transparent 0%, #d53a9c 100%);
+        border-image-slice: 1;
+    }
+    .timeline p:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-right: unset;
+    }
+    .timeline p:last-child:nth-child(odd) {
+        border-image: linear-gradient(to right, #d53a9c 0%, transparent 100%);
+        border-image-slice: 1;
+    }
+    .timeline p:last-child:nth-child(even) {
+        border-image: linear-gradient(to right, #ef4334 0%, transparent 100%);
+        border-image-slice: 1;
+    }
+}
 
-    .timeline ol li:last-child,
-    .timeline ol li:nth-last-child(2) div::before,
-    .timeline ol li:not(:last-child)::after,
-    .timeline .arrows {
+/* Mobile / Narrow Window Roadmap
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 1199px) {
+    #roadmap .arrows {
         display: none;
     }
-}
-
-*, *::after, *::before {
-    outline: 1px solid red;
-}
-
-.timeline-simple {
-    min-width: 300px;
-    max-width: 600px;
-    margin: auto;
-}
-.timeline-simple p {
-    font-size: 1em;
-    line-height: 1.75em;
-    border-top: 3px solid;
-    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-    border-image-slice: 1;
-    border-width: 3px;
-    margin: 0;
-    padding: 40px;
-    counter-increment: section;
-    position: relative;
-    color: #34435e;
-}
-.timeline-simple p:nth-child(odd) {
-    border-right: 3px solid;
-    padding-left: 0;
-}
-.timeline-simple p:nth-child(odd):before {
-    left: 100%;
-    margin-left: -20px;
-}
-.timeline-simple p:nth-child(even) {
-    border-left: 3px solid;
-    padding-right: 0;
-}
-.timeline-simple p:nth-child(even):before {
-    right: 100%;
-    margin-right: -20px;
-}
-.timeline-simple p:first-child {
-    border-top: 0;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-image: linear-gradient(to bottom, #743ad510 0%, #d53a9c 100%);
-    border-image-slice: 1;
-}
-.timeline-simple p:nth-last-child(2) {
-    border-bottom: 3px solid;
-}
-.timeline-simple p:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-image: linear-gradient(to top, #743ad510 0%, #d53a9c 100%);
-    border-image-slice: 1;
-    border-top: unset;
+    .timeline {
+        min-width: 300px;
+        max-width: 600px;
+        margin: auto;
+        display: block;
+    }
+    .timeline p {
+        font-size: 1em;
+        line-height: 1.75em;
+        border-top: 3px solid;
+        border-image: linear-gradient(to right, #ef4334 0%, #d53a9d 100%);
+        border-image-slice: 1;
+        border-width: 3px;
+        margin: 0;
+        padding: 40px;
+        counter-increment: section;
+        position: relative;
+        color: #34435e;
+    }
+    .timeline p:before {
+        content: '';
+        position: absolute;
+        border-radius: 4px;
+        height: 6px;
+        width: 24px;
+        background-color: #eaeaea;
+    }
+    .timeline p:nth-child(odd) {
+        border-right: 3px solid;
+        padding-left: 0;
+    }
+    .timeline p:nth-child(odd):before {
+        right: -14px;
+        top: 40%;
+    }
+    .timeline p:nth-child(even) {
+        border-left: 3px solid;
+        padding-right: 0;
+    }
+    .timeline p:nth-child(even):before {
+        left: -14px;
+        top: 40%;
+    }
+    .timeline p:first-child {
+        border-top: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-image: linear-gradient(to bottom, transparent 0%, #d53a9c 100%);
+        border-image-slice: 1;
+    }
+    .timeline p:nth-last-child(2) {
+        border-bottom: 3px solid;
+    }
+    .timeline p:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-image: linear-gradient(to top, transparent 0%, #d53a9c 100%);
+        border-image-slice: 1;
+        border-top: unset;
+    }
 }
