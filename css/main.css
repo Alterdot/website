@@ -191,7 +191,7 @@
     }
     #get-started {
         padding-left: unset;
-}
+    }
 }
 @media (max-width: 991px) {
     .features-section {
@@ -368,7 +368,7 @@
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 920px) {
     .timeline ol,
     .timeline ol li {
         width: auto;
@@ -423,4 +423,60 @@
     .timeline .arrows {
         display: none;
     }
+}
+
+*, *::after, *::before {
+    outline: 1px solid red;
+}
+
+.timeline-simple {
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+.timeline-simple p {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: #34435e;
+}
+.timeline-simple p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+.timeline-simple p:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+}
+.timeline-simple p:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+.timeline-simple p:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+}
+.timeline-simple p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-image: linear-gradient(to bottom, #743ad510 0%, #d53a9c 100%);
+    border-image-slice: 1;
+}
+.timeline-simple p:nth-last-child(2) {
+    border-bottom: 3px solid;
+}
+.timeline-simple p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-image: linear-gradient(to top, #743ad510 0%, #d53a9c 100%);
+    border-image-slice: 1;
+    border-top: unset;
 }
