@@ -308,6 +308,24 @@ h3.c-primary {
     height: 45px;
 }
 
+.timeline .timeline-title {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.timeline p {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+}
+
+.about-us-main {
+    text-align: justify;
+}
+
 /* Large Window Roadmap
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 1200px) {
@@ -338,12 +356,12 @@ h3.c-primary {
         height: 320px;
     }
     .timeline p:before {
-          content: '';
-          position: absolute;
-          border-radius: 4px;
-          height: 24px;
-          width: 6px;
-          background-color: #eaeaea;
+        content: '';
+        position: absolute;
+        border-radius: 4px;
+        height: 24px;
+        width: 6px;
+        background-color: #eaeaea;
     }
     .timeline p:nth-child(odd) {
         border-top: 3px solid;
@@ -354,6 +372,7 @@ h3.c-primary {
     }
     .timeline p:nth-child(even) {
         border-bottom: 3px solid;
+        padding-top: 43px;
     }
     .timeline p:nth-child(even):before {
         right: 40%;
@@ -429,6 +448,9 @@ h3.c-primary {
     .timeline p:nth-child(even) {
         border-left: 3px solid;
         padding-right: 0;
+    }
+    .timeline p:nth-child(even) .timeline-title {
+        text-align: end;
     }
     .timeline p:nth-child(even):before {
         left: -14px;
