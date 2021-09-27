@@ -46,7 +46,7 @@ body {
     background-image: url(../img/body-bg.png);
     background-color: #16181d;
     color: #6A656B;
-    font-family: visionregular, Arial, "Helvetica Neue", Helvetica, serif, sans-serif;
+    font-family: 'Roboto';
     font-weight: 400;
     line-height: 1.63;
     letter-spacing: -.001em;
@@ -381,7 +381,7 @@ blockquote p {
      font-size: 100px;
      font-weight: 700;
      color: #fff;
-     font-family: visionregular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-family: 'Roboto';
      line-height: 1em;
      letter-spacing: -.02em;
  }
@@ -405,14 +405,14 @@ blockquote p {
      line-height: 1.3em;
      font-weight: 400;
      color: #fff;
-     font-family: visionregular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-family: 'Roboto';
      letter-spacing: -.02em;
  }
 .h3, .h4, .h5, .h6, h3, h4, h5, h6 {
     margin: .4em 0;
     line-height: 1.3em;
     font-weight: 700;
-    font-family: visionregular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Roboto';
     letter-spacing: -.02em;
 }
 .h2 a, h2 a {
@@ -4759,7 +4759,7 @@ button::-moz-focus-inner {
     padding: 0 0 18px 10px;
     font-style: normal;
     font-size: 28px;
-    font-family: Arial, Baskerville, monospace;
+    font-family: 'Roboto';
     cursor: pointer;
 }
 .mfp-close:focus, .mfp-close:hover {

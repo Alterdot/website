@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/woff/Roboto-Regular.woff') format('woff'),
+        url('../fonts/woff2/Roboto-Regular.woff2') format('woff2');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../fonts/woff/Roboto-Bold.woff') format('woff')
+        url('../fonts/woff2/Roboto-Bold.woff2') format('woff2');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/woff/Lato-Regular.woff') format('woff'),
+        url('../fonts/woff2/Lato-Regular.woff2') format('woff2');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../fonts/woff/Lato-Bold.woff') format('woff'),
+        url('../fonts/woff2/Lato-Bold.woff2') format('woff2');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+h3.c-primary {
+    font-family: 'Lato';
+}
+
 .menu-social-item {
     max-width: 100%;
     max-height: 110px;
@@ -222,8 +262,8 @@
         margin-top: -35%;
     }
     .supported-platforms a, .sup-platform {
-        height: 64px;
-        width: 64px;
+        height: 56px;
+        width: 56px;
     }
 }
 @media (max-width: 768px) {
@@ -249,7 +289,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 40px;
 }
 #roadmap .arrow {
     background: transparent;
@@ -353,6 +393,7 @@
     .timeline {
         min-width: 300px;
         max-width: 600px;
+        width: 86%;
         margin: auto;
         display: block;
     }
