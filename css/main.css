@@ -219,6 +219,9 @@ h3.c-primary {
     }
 }
 @media (max-width: 1200px) {
+    .supported-platforms {
+        bottom: 52px;
+    }
     .wallet-container .supported-platforms {
         left: calc(10% - 16px);
     }
@@ -363,6 +366,17 @@ h3.c-primary {
         width: 6px;
         background-color: #eaeaea;
     }
+    .timeline .timeline-here::after {
+        content: "We are here";
+        color: #FFFFFF;
+        top: 52px;
+        left: 48%;
+        position: relative;
+        width: fit-content;
+        padding: 0px 8px;
+        border-radius: 20px;
+        background-color: #e740524d;
+    }
     .timeline p:nth-child(odd) {
         border-top: 3px solid;
     }
@@ -436,6 +450,18 @@ h3.c-primary {
         height: 6px;
         width: 24px;
         background-color: #eaeaea;
+    }
+    .timeline .timeline-here .timeline-title::before {
+        content: "We are here";
+        color: #FFFFFF;
+        position: relative;
+        width: fit-content;
+        padding: 0px 8px;
+        border-radius: 20px;
+        background-color: #e740524d;
+        font-size: 16px;
+        font-weight: 400;
+        float: left;
     }
     .timeline p:nth-child(odd) {
         border-right: 3px solid;
