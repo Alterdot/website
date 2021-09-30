@@ -73,7 +73,7 @@ h3.c-primary {
 }
 
 #bdns-search {
-    padding: 2px 0px 0px 7px;
+    padding: 1px 0px 1px 7px;
     border-radius: 12px;
     background-color: #190411da;
     caret-color: unset;
@@ -85,6 +85,10 @@ h3.c-primary {
     #bdns-search {
         width: 140px;
     }
+}
+
+.about-us-main {
+    text-align: justify;
 }
 
 .features-section {
@@ -115,6 +119,7 @@ h3.c-primary {
     width: 50%;
     height: 50%;
     fill: #ee5b2d;
+    color: #ee5b2d;
 }
 
 .feature-bottom {
@@ -173,6 +178,7 @@ h3.c-primary {
     position: relative;
     bottom: 68px;
     max-width: fit-content;
+    max-width: -moz-fit-content;
 }
 
 .wallet-container .supported-platforms {
@@ -277,17 +283,16 @@ h3.c-primary {
 }
 @media (max-width: 560px) {
     .feature-top .adot-icon {
-        width: 42%;
-        height: 42%;
+        width: 40%;
+        height: 40%;
     }
     .features-item:hover .feature-top {
-        margin-top: -52%;
+        margin-top: -50%;
     }
 }
 
-/* Roadmap Arrows
+/* General Roadmap
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #roadmap .arrows {
     display: flex;
     justify-content: center;
@@ -325,8 +330,17 @@ h3.c-primary {
     text-align: justify;
 }
 
-.about-us-main {
-    text-align: justify;
+.timeline .timeline-here::after,
+.timeline .timeline-here .timeline-title::before {
+    color: #FFFFFF;
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 0px 8px;
+    border-radius: 20px;
+    background-color: #e740524d;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* Large Window Roadmap
@@ -337,7 +351,7 @@ h3.c-primary {
         margin-bottom: 140px;
     }
     .timeline, .timeline * {
-        transition: all 0.2s ease;
+        transition: all 0.4s ease-in-out;
     }
     .timeline {
         display: inline-flex;
@@ -346,10 +360,10 @@ h3.c-primary {
     .timeline p {
         font-size: 1em;
         line-height: 1.75em;
-        border-right: 3px solid;
         border-image: linear-gradient(to top, #ef4334 0%, #d53a9d 100%);
         border-image-slice: 1;
-        border-width: 3px;
+        border-width: 0 3px 0 0;
+        border-style: solid;
         margin: 0;
         padding: 40px;
         counter-increment: section;
@@ -368,14 +382,8 @@ h3.c-primary {
     }
     .timeline .timeline-here::after {
         content: "We are here";
-        color: #FFFFFF;
         top: 52px;
         left: 48%;
-        position: relative;
-        width: fit-content;
-        padding: 0px 8px;
-        border-radius: 20px;
-        background-color: #e740524d;
     }
     .timeline p:nth-child(odd) {
         border-top: 3px solid;
@@ -433,10 +441,10 @@ h3.c-primary {
     .timeline p {
         font-size: 1em;
         line-height: 1.75em;
-        border-top: 3px solid;
         border-image: linear-gradient(to right, #ef4334 0%, #d53a9d 100%);
         border-image-slice: 1;
-        border-width: 3px;
+        border-width: 3px 0 0 0;
+        border-style: solid;
         margin: 0;
         padding: 40px;
         counter-increment: section;
@@ -453,14 +461,6 @@ h3.c-primary {
     }
     .timeline .timeline-here .timeline-title::before {
         content: "We are here";
-        color: #FFFFFF;
-        position: relative;
-        width: fit-content;
-        padding: 0px 8px;
-        border-radius: 20px;
-        background-color: #e740524d;
-        font-size: 16px;
-        font-weight: 400;
         float: left;
     }
     .timeline p:nth-child(odd) {

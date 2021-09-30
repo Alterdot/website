@@ -7,7 +7,7 @@
   arrowNext = document.querySelector("#roadmap .arrows .arrow__next"),
   firstItem = document.querySelector("#roadmap p:first-child"),
   lastItem = document.querySelector("#roadmap p:last-child"),
-  xScrolling = 420,
+  xScrolling = 840,
   disabledClass = "disabled";
 
   // START

@@ -1272,10 +1272,10 @@ var CRUMINA = {};
 				$.ajax({
 					url: `https://explorer.alterdot.network/api/resolvedomain?name=${domain}`,
 					type: 'GET',
-					success: function(data) { 
+					success: function(data) {
 						if (data !== "Blockchain domain name not found!") {
 							window.open(`https://ipfs.io/ipfs/${data}`);
-							searchBar.placeholder = "Lookup Blockchain Domain";
+							searchBar.placeholder = "Lookup Domain";
 						} else {
 							searchBar.placeholder = "Domain Not Found";
 						}
@@ -1318,4 +1318,3 @@ var CRUMINA = {};
 	window.addEventListener("hashchange", onRouteChanged);
 
 })(jQuery);
-
