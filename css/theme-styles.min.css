@@ -2273,11 +2273,6 @@ textarea {
     box-shadow: 15px 0 40px 0 rgba(0, 0, 0, .5);
     padding: 0px;
 }
-@media (max-width:768px) {
-    .header.headroom--not-top {
-        padding-bottom: 15px;
-    }
-}
 .header-content-wrapper {
     position: relative;
     display: -webkit-box;
@@ -2305,7 +2300,9 @@ textarea {
 }
 .site-logo img {
     margin-right: 13px;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
+    width: 220px;
+    margin-top: 6px;
 }
 .site-logo .adot-icon {
     width: 100px;
@@ -2885,9 +2882,10 @@ textarea {
     font-weight: 400;
 }
 .megamenu-bg {
-    background-image: url(../img/megamenu-bg.png);
+    background-image: url(../img/docs.png);
     background-position: right bottom;
     background-repeat: no-repeat;
+    background-size: 25%;
 }
 @media (max-width: 768px) {
     .megamenu-bg {
@@ -2895,9 +2893,11 @@ textarea {
     }
 }
 .megamenu-bg2 {
-    background-image: url(../img/megamenu-bg2.png);
-    background-position: right bottom;
+    background-image: url(../img/social.png);
     background-repeat: no-repeat;
+    background-size: 15%;
+    background-position-x: 97%;
+    background-position-y: 26px;
 }
 @media (max-width: 768px) {
     .megamenu-bg2 {
@@ -3179,6 +3179,7 @@ textarea {
     }
     .primary-menu .showhide {
         display: block;
+        margin-bottom: 6px;
     }
     .primary-menu .primary-menu-menu {
         display: none;
@@ -3215,8 +3216,7 @@ textarea {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         position: absolute;
-        top: -webkit-calc(100% + 15px);
-        top: calc(100% + 15px);
+        top: 100%;
         left: 0;
         max-height: 60vh!important;
     }
