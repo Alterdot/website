@@ -878,7 +878,7 @@
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     bottom: -28px;
-    right: 3%;
+    right: 0.5vw;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     cursor: pointer;
@@ -2692,7 +2692,6 @@ table>tbody>tr.danger>td, table>tbody>tr.danger>th, table>tbody>tr>td.danger, ta
     padding: 80px 180px 100px 80px;
     background-color: #131519;
     border-radius: 20px;
-    background-image: url(../img/graph.png);
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -3553,16 +3552,6 @@ table>tbody>tr.danger>td, table>tbody>tr.danger>th, table>tbody>tr>td.danger, ta
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-}
-.countdown-bg1 {
-    background-image: url(../img/countdown-bg1.png);
-    background-color: #111216;
-}
-.countdown-bg2 {
-    background-image: url(../img/countdown-bg2.jpg);
-}
-.countdown-bg3 {
-    background-image: url(../img/countdown-bg3.jpg);
 }
 .adsite-countdown-number .time_circles>div>span {
     color: #F44D32;

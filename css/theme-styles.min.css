@@ -1292,9 +1292,6 @@ hr {
 .overlay-blog {
     background: rgba(22, 24, 29, .6);
 }
-.bg-1, .bg-2 {
-    background-repeat: no-repeat;
-    background-position: 50% 50%}
 .medium-padding40 {
     padding: 40px 0;
 }
@@ -1451,12 +1448,6 @@ hr {
     .padding-left60-desktop {
         padding-left: 0;
     }
-}.bg-1 {
-     background-image: url(../img/bg-2.png);
-     background-size: contain;
- }
-.bg-2 {
-    background-image: url(../img/icon1.png);
 }
 .abbr, abbr {
     color: #ff3133;
@@ -1961,7 +1952,6 @@ progress, sub, sup {
 .block--with-arrow-left:after {
     content: '';
     display: block;
-    background: url(../img/arrow-left-w-50.html) no-repeat;
     position: absolute;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
