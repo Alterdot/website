@@ -189,12 +189,13 @@ h3.c-primary {
     left: calc(22% - 16px);
 }
 
-.wallet-container>h3 {
-    padding-top: 30px;
+.extension-container>h3 {
+    margin-bottom: 24px;
 }
 
-.wallet-container>img {
-    margin-top: 22px;
+.wallet-container>h3 {
+    margin-top: 52px;
+    margin-bottom: 40px;
 }
 
 .supported-platforms a {
@@ -219,6 +220,14 @@ h3.c-primary {
     border: 2px solid white;
 }
 
+.docs-link {
+    color: #EE5B2D;
+}
+
+.docs-link:hover {
+    color: #923372;
+}
+
 @media (max-width: 1400px) {
     .features-item:hover .feature-top {
         margin-top: -78%;
@@ -226,7 +235,7 @@ h3.c-primary {
 }
 @media (max-width: 1200px) {
     .supported-platforms {
-        bottom: 52px;
+        bottom: 72px;
     }
     .wallet-container .supported-platforms {
         left: calc(10% - 16px);
@@ -234,9 +243,16 @@ h3.c-primary {
     .extension-container .supported-platforms {
         left: calc(25% - 16px);
     }
-    .wallet-container>h3,
-    .wallet-container>img {
-        margin-top: 0px;
+    .wallet-container>h3 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .extension-container>h3 {
+        margin-top: 40px;
+    }
+    .wallet-container>img,
+    .extension-container>img {
+        margin: 20px 0px;
     }
     #get-started {
         padding-left: unset;
@@ -407,7 +423,7 @@ h3.c-primary {
         border-right: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        border-image: linear-gradient(to right, transparent 0%, #d53a9c 100%);
+        border-image: linear-gradient(to right, transparent 0%, #D53A9C 100%);
         border-image-slice: 1;
     }
     .timeline p:last-child {
@@ -416,11 +432,11 @@ h3.c-primary {
         border-right: unset;
     }
     .timeline p:last-child:nth-child(odd) {
-        border-image: linear-gradient(to right, #d53a9c 0%, transparent 100%);
+        border-image: linear-gradient(to right, #D53A9C 0%, transparent 100%);
         border-image-slice: 1;
     }
     .timeline p:last-child:nth-child(even) {
-        border-image: linear-gradient(to right, #ef4334 0%, transparent 100%);
+        border-image: linear-gradient(to right, #EF4435 0%, transparent 100%);
         border-image-slice: 1;
     }
 }
@@ -441,7 +457,7 @@ h3.c-primary {
     .timeline p {
         font-size: 1em;
         line-height: 1.75em;
-        border-image: linear-gradient(to right, #ef4334 0%, #d53a9d 100%);
+        border-image: linear-gradient(to right, #EF4435 0%, #D53A9C 100%);
         border-image-slice: 1;
         border-width: 3px 0 0 0;
         border-style: solid;
@@ -486,7 +502,7 @@ h3.c-primary {
         border-top: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        border-image: linear-gradient(to bottom, transparent 0%, #d53a9c 100%);
+        border-image: linear-gradient(to bottom, transparent 0%, #D53A9C 100%);
         border-image-slice: 1;
     }
     .timeline p:nth-last-child(2) {
@@ -495,7 +511,7 @@ h3.c-primary {
     .timeline p:last-child {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        border-image: linear-gradient(to top, transparent 0%, #d53a9c 100%);
+        border-image: linear-gradient(to top, transparent 0%, #EF4435 100%);
         border-image-slice: 1;
         border-top: unset;
     }
