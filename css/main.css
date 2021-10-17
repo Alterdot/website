@@ -147,8 +147,8 @@ h3.c-primary {
 }
 
 .ecosystem-menu img {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
@@ -166,6 +166,10 @@ h3.c-primary {
     width: 60% !important;
     right: 0 !important;
     left: unset !important;
+}
+
+.social-menu .megamenu-row .menu-column:first-of-type {
+    padding-left: 70px;
 }
 
 #get-started {
@@ -384,7 +388,7 @@ h3.c-primary {
         padding: 40px;
         counter-increment: section;
         position: relative;
-        color: #34435e;
+        color: #76859f;
         width: 420px;
         height: 320px;
     }
