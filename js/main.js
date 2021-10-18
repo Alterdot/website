@@ -293,39 +293,6 @@ var CRUMINA = {};
 		$dragable = false;
 	}
 
-	CRUMINA.google_map_init = function () {
-		$('.google-map').each(function () {
-			var $this = $(this);
-
-			var $map_type = $this.data('map-type'),
-				mapZoom = $this.data('zoom'),
-				style = $this.data('map-style').replace(/'/g, '"'),
-				EncStyle = (style.length > 0) ? JSON.parse(style) : '',
-				customMarker = $this.data('custom-marker'),
-				customTitle = $this.data('custom-title'),
-				address = $this.data('locations'),
-				disableScroll = ($this.data('disable-scrolling') ? true : false);
-
-			console.log(customTitle);
-
-			$this.find('.map-canvas').gmap3({
-				address: address,
-				zoom: mapZoom,
-				scrollwheel: disableScroll,
-				streetViewControl: false,
-				draggable: $dragable,
-				mapTypeId: google.maps.MapTypeId[$map_type],
-				styles: EncStyle,
-				mapTypeControl: false
-			}).marker(function (map) {
-				return {
-					position: map.getCenter(),
-					icon: customMarker
-				};
-			});
-		});
-	};
-
 	/* -----------------------
      * Fixed Header
      * --------------------- */
@@ -1236,7 +1203,6 @@ var CRUMINA = {};
 		CRUMINA.overlayMenu();
 		CRUMINA.overlayBody();
 		CRUMINA.flyingBalls();
-		CRUMINA.google_map_init();
 		CRUMINA.countdowns();
 		CRUMINA.initSmoothScroll();
 		CRUMINA.shareButtons();

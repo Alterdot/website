@@ -6,12 +6,10 @@
 	<title>Alterdot - a decentralized Web.</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
 	<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
 	<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
 	<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -528,20 +526,22 @@
             </button>
         </div>
         <div class="timeline">
-            <p><span class="timeline-title">Change of consensus algorithms</span>In January of 2021 we made the switch to the Argon2d16000 Poof-of-Work mining algorithm which highly increases the memory cost and favors CPU miners. Around the same time we also switched to the LWMA difficulty retargeting algorithm which proves to be one of the most efficient algorithms of its kind.</p>
-            <p><span class="timeline-title">Major codebase upgrade</span>Alterdot was previously known as Bitcreds, and before that as Credits. These were built mainly on old codebases from Dash and Dynamic which were more than outdated. Once Alterdot was launched on the 17th of June 2021 our codebase had been upgraded, bringing us in line with much newer code from Dash.</p>
-            <p><span class="timeline-title">Beginning of the BlockchainDNS</span>With the launch of Alterdot, the initial version of our BlockchainDNS (version 0) was released and with it the registration of domains became available.</p>
-            <p class="timeline-here"><span class="timeline-title">Deterministic Masternodes</span>The upgraded codebase brought with it numerous changes and one of the most important among them was the Deterministic Masternodes system which stores important functional information on-chain rather than individually on each Masternode as was the case with the old system.</p>
-            <p><span class="timeline-title">Insight Explorer and API</span>The Insight block explorer and API includes several important features that our current main explorer is lacking. Having those features implies further development and expansion of the Alterdot ecosystem in the area of web applications.</p>
-            <p><span class="timeline-title">Alterdot IPFS Gateway</span>The IPFS infrastructure currently available on the internet for free is maintained by numerous organizations and it is important for us to bring our own contribution by maintaining a public gateway ourselves. Building on top of a technology also implies becoming part of it.</p>
-            <p><span class="timeline-title">ChainLocks and Automatic InstantSend activation</span>ChainLocks represent a protection mechanism against 51% attacks that makes use of the Masternode network. Masternodes also allow for the creation of InstantSend transactions which are currently realized on request but in the future they will be automated for no extra costs. These features are not yet activated as we are waiting for the Masternode network to grow to an acceptable size.</p>
-            <p><span class="timeline-title">Light Wallet</span>The browser extension will be further expanded to include light wallet functionalities such as coin transfers and domain name management. Currently, this is possible only if a full Alterdot wallet is running locally.</p>
+            <p><i class="far fa-check-circle"></i><span class="timeline-title">Change of consensus algorithms</span>In January of 2021 we made the switch to the Argon2d16000 Poof-of-Work mining algorithm which highly increases the memory cost and favors CPU miners. A few months later we also changed our difficulty retargeting algorithm to LWMA which proves to be one of the most efficient algorithms of its kind.</p>
+            <p><i class="far fa-check-circle"></i><span class="timeline-title">Major codebase upgrade</span>Alterdot was previously known as Bitcreds, and before that as Credits. Both of them were built upon older codebases from Dash and Dynamic that today would be outdated. Once Alterdot was launched on the 17th of June 2021 our codebase had been upgraded, bringing us in line with much newer code from Dash.</p>
+            <p><i class="far fa-check-circle"></i><span class="timeline-title">Beginning of the BlockchainDNS</span>With the launch of Alterdot, the initial version of our BlockchainDNS was released and with it the registration of domains became available. The main use cases we are looking to develop involve tying these domains together with IPFS content identifiers but it is possible to register anything under a domain name.</p>
+            <p><i class="far fa-check-circle"></i><span class="timeline-title">Deterministic Masternodes</span>One of the most significant changes brought by the upgraded codebase is the Deterministic Masternodes system which stores functional information on-chain rather than individually on each Masternode as was the case with the old system. This change leads to a more secure and predictable system.</p>
+            <p><i class="far fa-check-circle"></i><span class="timeline-title">Long-Living Masternode Quorums</i></span>The Masternode network is expanded with a new functionality which implies the formation of quorums or sets of Masternodes that work together towards accomplishing certain tasks. After a quorum has been successfully created, it remains active for several hours or days.</p>
+            <p><span class="timeline-here">We are here</span><span class="timeline-title">Browser Extension and Website</span>Our browser extension and website represent main facillitators of the Alterdot ecosystem as they include features that enable accessing our decentralized web through blockchain domain name resolution and more.</p>
+            <p><span class="timeline-title">Insight Explorer and API</span>The Insight block explorer and API includes several important features that our current main explorer is lacking. Having those features allows for further development and expansion of the Alterdot ecosystem in the area of web applications.</p>
+            <p><span class="timeline-title">Alterdot IPFS Gateway</span>The IPFS infrastructure currently available for free on the internet is maintained by numerous organizations. We are going to contribute by maintaining a public gateway ourselves since building on top of a technology also implies becoming part of it.</p>
+            <p><span class="timeline-title">Activation of ChainLocks</span>ChainLocks represent a protection mechanism against 51% attacks that makes use of the Masternode network. Quorums of Masternodes start collectively signing past blocks which are then recognized by the rest of the network as secure since they can no longer be reorgnized.</p>
+            <p><span class="timeline-title">Light Wallet</span>The browser extension will be further expanded to include light wallet functionalities such as coin transfers and domain name management. In the initial version of the extension these operations are possible only if a full Alterdot wallet is running locally.</p>
             <p><span class="timeline-title">Introduction of Alternodes</span>Alternodes will be introduced as a second tier of Masternodes, having higher specifications. They will be running IPFS clients and they will allow for pinning IPFS content that resides under Alterdot domains. Alternodes will be the building block of our decentralized hosting solution.</p>
             <p><span class="timeline-title">Search Engine</span>A search engine for blockchain domain names will be created in order to easily find and discover Alterdot websites. Coupled with this, we will be looking into the creation a tagging system for websites in order to realize even more efficient queries.</p>
             <p><span class="timeline-title">Content Filtering</span>The content hosted under Alterdot domains has to be resistant to censorship but at the same time, our network should never become a harbor for criminal activities. This is why we will implement a decentralized ticketing system that rewards people for reporting and removing illegal content.</p>
             <p><span class="timeline-title">New Desktop Wallet</span>A new desktop wallet will be created with the capability of running either in full or light mode. Extended functionalities related to accessing and managing Alterdot domains will also be included.</p>
             <p><span class="timeline-title">Wrapping Alterdot</span>In order to give everyone an easy, secure and decentralized means of exchanging Alterdot into any other cryptocurrency or token, we are looking forward to create an easy-to-use tool for wrapping Alterdot on other blockchains such as Ethereum.</p>
-            <p><span class="timeline-title">Alterdot Browser</span>Facilitating the usage of the Alterdot web can be made easiest by packing together many of our previously created tools and services and this leads to the creation of our very own browser fully integrated with Alterdot and IPFS nodes.</p>
+            <p><span class="timeline-title">All-in-One Application</span>Facilitating the usage of the Alterdot web can be made easiest by packing together many of our previously created tools and services. This leads to the creation of an all-encompassing application fully integrated with Alterdot and IPFS nodes.</p>
             <p><span class="timeline-title">Complete Decentralization</span>Reaching complete decentralization of the web as we know it implies creating a solution for secure data storage and processing resembling traditional Backend infrastructure through IPFS, Smart Contracts and Alternodes.</p>
             <p><span class="timeline-title">Website Templates</span>One of the main end products that we have planned for the Alterdot ecosystem is an array of customizable templates for decentralized websites ranging from e-commerce to general data administration and more.</p>
         </div>
@@ -662,16 +662,13 @@
 	</a>
 </footer>
 
-<!-- ... end Footer -->
-
+<!-- End Footer -->
 
 <script src="js/method-assign.js"></script>
 
-<!-- jQuery first, then Other JS. -->
+<!-- jQuery first, then other JS -->
 
 <script src="js/jquery-3.3.1.min.js"></script>
-
-<script src="js/map-shortcode.js"></script>
 
 <script src="js/js-plugins/crum-mega-menu.js"></script>
 <script src="js/theme-plugins.js"></script>
@@ -684,10 +681,10 @@
 <script src="js/js-plugins/bootstrap-datepicker.js"></script><!-- FontAwesome 5.x.x JS -->
 
 <script defer src="fonts/fontawesome-all.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+<script src="js/js-plugins/hammer.min.js"></script>
 
 <script src="js/main.js"></script>
-<script  src="js/roadmap.js"></script>
+<script src="js/roadmap.js"></script>
 </body>
 
 </html>

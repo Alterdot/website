@@ -317,7 +317,7 @@ h3.c-primary {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 #roadmap .arrow {
     background: transparent;
@@ -348,12 +348,19 @@ h3.c-primary {
     display: flex;
     flex-flow: column;
     text-align: justify;
+    font-size: 1em;
+    line-height: 1.75em;
+    border-style: solid;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: #76859f;
 }
 
-.timeline .timeline-here::after,
-.timeline .timeline-here .timeline-title::before {
+.timeline .timeline-here {
     color: #FFFFFF;
-    position: relative;
+    position: absolute;
     width: fit-content;
     width: -moz-fit-content;
     padding: 0px 8px;
@@ -361,6 +368,11 @@ h3.c-primary {
     background-color: #e740524d;
     font-size: 16px;
     font-weight: 400;
+}
+
+.timeline p .fa-check-circle {
+    position: absolute;
+    font-size: 28px;
 }
 
 /* Large Window Roadmap
@@ -378,53 +390,54 @@ h3.c-primary {
         flex-flow: row;
     }
     .timeline p {
-        font-size: 1em;
-        line-height: 1.75em;
         border-image: linear-gradient(to top, #ef4334 0%, #d53a9d 100%);
         border-image-slice: 1;
         border-width: 0 3px 0 0;
-        border-style: solid;
-        margin: 0;
-        padding: 40px;
-        counter-increment: section;
-        position: relative;
-        color: #76859f;
         width: 420px;
         height: 320px;
     }
-    .timeline p:before {
+    .timeline p::before {
         content: '';
         position: absolute;
+        right: 150px;
         border-radius: 4px;
-        height: 24px;
+        height: 22px;
         width: 6px;
         background-color: #eaeaea;
     }
-    .timeline .timeline-here::after {
-        content: "We are here";
-        top: 52px;
-        left: 48%;
+    .timeline p .fa-check-circle {
+        right: 139px;
+    }
+    .timeline .timeline-here {
+        right: 102px;
+        bottom: -48px;
     }
     .timeline p:nth-child(odd) {
         border-top: 3px solid;
     }
-    .timeline p:nth-child(odd):before {
-        right: 40%;
-        top: -14px;
+    .timeline p:nth-child(odd)::before {
+        top: -13px;
+    }
+    .timeline p:nth-child(odd) .fa-check-circle {
+        color: #d53a9d;
+        top: -48px;
     }
     .timeline p:nth-child(even) {
         border-bottom: 3px solid;
         padding-top: 43px;
     }
-    .timeline p:nth-child(even):before {
-        right: 40%;
-        bottom: -14px;
+    .timeline p:nth-child(even)::before {
+        bottom: -13px;
+    }
+    .timeline p:nth-child(even) .fa-check-circle {
+        color: #ef4334;
+        bottom: -48px;
     }
     .timeline p:nth-child(2) {
         border-left: 3px solid;
     }
     .timeline p:first-child {
-        border-right: 0;
+        border-right: unset;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         border-image: linear-gradient(to right, transparent 0%, #D53A9C 100%);
@@ -459,37 +472,25 @@ h3.c-primary {
         display: block;
     }
     .timeline p {
-        font-size: 1em;
-        line-height: 1.75em;
         border-image: linear-gradient(to right, #EF4435 0%, #D53A9C 100%);
         border-image-slice: 1;
         border-width: 3px 0 0 0;
-        border-style: solid;
-        margin: 0;
-        padding: 40px;
-        counter-increment: section;
-        position: relative;
-        color: #34435e;
     }
     .timeline p:before {
         content: '';
         position: absolute;
+        top: 50%;
         border-radius: 4px;
         height: 6px;
-        width: 24px;
+        width: 22px;
         background-color: #eaeaea;
-    }
-    .timeline .timeline-here .timeline-title::before {
-        content: "We are here";
-        float: left;
     }
     .timeline p:nth-child(odd) {
         border-right: 3px solid;
         padding-left: 0;
     }
     .timeline p:nth-child(odd):before {
-        right: -14px;
-        top: 40%;
+        right: -13px;
     }
     .timeline p:nth-child(even) {
         border-left: 3px solid;
@@ -499,11 +500,10 @@ h3.c-primary {
         text-align: end;
     }
     .timeline p:nth-child(even):before {
-        left: -14px;
-        top: 40%;
+        left: -13px;
     }
     .timeline p:first-child {
-        border-top: 0;
+        border-top: unset;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         border-image: linear-gradient(to bottom, transparent 0%, #D53A9C 100%);
@@ -515,8 +515,44 @@ h3.c-primary {
     .timeline p:last-child {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        border-top: unset;
+    }
+    .timeline p:last-child:nth-child(odd) {
+        border-image: linear-gradient(to top, transparent 0%, #D53A9C 100%);
+        border-image-slice: 1;
+    }
+    .timeline p:last-child:nth-child(even) {
         border-image: linear-gradient(to top, transparent 0%, #EF4435 100%);
         border-image-slice: 1;
-        border-top: unset;
+    }
+    .timeline .fa-check-circle {
+        top: calc(48% - 6px);
+    }
+    .timeline p:nth-child(odd) .fa-check-circle {
+        right: -48px;
+        color: #D53A9C;
+    }
+    .timeline p:nth-child(even) .fa-check-circle {
+        left: -48px;
+        color: #EF4435;
+    }
+    .timeline .timeline-here {
+        left: -120px;
+        top: calc(48% - 6px);
+    }
+}
+@media (max-width: 900px) {
+    .timeline .fa-check-circle {
+        top: unset;
+    }
+    .timeline p:nth-child(odd) .fa-check-circle {
+        right: 38px;
+    }
+    .timeline p:nth-child(even) .fa-check-circle {
+        left: unset;
+    }
+    .timeline .timeline-here {
+        left: unset;
+        top: unset;
     }
 }
