@@ -356,6 +356,7 @@ h3.c-primary {
     counter-increment: section;
     position: relative;
     color: #76859f;
+    user-select: text;
 }
 
 .timeline .timeline-here {

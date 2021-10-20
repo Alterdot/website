@@ -1252,6 +1252,16 @@ var CRUMINA = {};
 				});
 			}
 		});
+
+		$.ajax({
+			url: `https://explorer.alterdot.network/api/getmasternodecount`,
+			type: 'GET',
+			success: function(data) {
+				if (data.enabled) {
+					$('#masternode-count').attr("data-to", data.enabled);
+				}
+			}
+		});
 	});
 
 	// Implementing a Hashing Router based on https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
