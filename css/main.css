@@ -539,6 +539,18 @@ h3.c-primary {
     .timeline p:nth-child(even) .fa-check-circle {
         left: unset;
     }
+    .timeline p .timeline-title {
+        max-width: 90%;
+    }
+    .timeline p:nth-child(odd) .timeline-title {
+        margin-right: auto;
+    }
+    .timeline p:nth-child(even) .timeline-title {
+        margin-left: auto;
+    }
+    .timeline p .timeline-here+.timeline-title {
+        max-width: 70%;
+    }
     .timeline .timeline-here {
         left: unset;
         top: unset;
