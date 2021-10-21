@@ -211,19 +211,6 @@ h3.c-primary {
     width: 76px;
 }
 
-.source-code {
-    font-size: 36px;
-    border-radius: 36px;
-    background: black;
-    width: 76px;
-    height: 76px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-}
-
 .docs-link {
     color: #EE5B2D;
 }
