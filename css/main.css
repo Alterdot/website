@@ -393,18 +393,20 @@ h3.c-primary {
         width: 6px;
         background-color: #eaeaea;
     }
+    .timeline p .timeline-here {
+        right: 102px;
+    }
     .timeline p .fa-check-circle {
         right: 139px;
-    }
-    .timeline .timeline-here {
-        right: 102px;
-        bottom: -48px;
     }
     .timeline p:nth-child(odd) {
         border-top: 3px solid;
     }
     .timeline p:nth-child(odd)::before {
         top: -13px;
+    }
+    .timeline p:nth-child(odd) .timeline-here {
+        top: -48px;
     }
     .timeline p:nth-child(odd) .fa-check-circle {
         color: #d53a9d;
@@ -416,6 +418,9 @@ h3.c-primary {
     }
     .timeline p:nth-child(even)::before {
         bottom: -13px;
+    }
+    .timeline p:nth-child(even) .timeline-here {
+        bottom: -48px;
     }
     .timeline p:nth-child(even) .fa-check-circle {
         color: #ef4334;
