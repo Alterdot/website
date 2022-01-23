@@ -57,11 +57,11 @@ h3.c-primary {
     display: block !important;
 }
 
-.menu-column {
-    padding: 50px;
+.social-menu .menu-column {
+    padding: 40px;
 }
 
-.menu-column, .menu-column a {
+.social-menu .menu-column, .social-menu .menu-column a {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -169,7 +169,7 @@ h3.c-primary {
 }
 
 .social-menu .megamenu-row .menu-column:first-of-type {
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 #get-started {
@@ -283,9 +283,12 @@ h3.c-primary {
     }
 }
 @media (max-width: 768px) {
-    .menu-column {
+    .social-menu .menu-column {
         display: flex !important;
         padding: 16px;
+    }
+    .social-menu .megamenu-row .menu-column:first-of-type {
+        padding-left: 16px;
     }
 }
 @media (max-width: 560px) {
@@ -530,8 +533,13 @@ h3.c-primary {
         color: #EF4435;
     }
     .timeline .timeline-here {
-        left: -120px;
         top: calc(48% - 6px);
+    }
+    .timeline p:nth-child(odd) .timeline-here {
+        right: -120px;
+    }
+    .timeline p:nth-child(even) .timeline-here {
+        left: -120px;
     }
 }
 @media (max-width: 900px) {
@@ -559,5 +567,11 @@ h3.c-primary {
     .timeline .timeline-here {
         left: unset;
         top: unset;
+    }
+    .timeline p:nth-child(odd) .timeline-here {
+        right: 40px;
+    }
+    .timeline p:nth-child(even) .timeline-here {
+        left: 40px;
     }
 }

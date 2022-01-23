@@ -3194,7 +3194,7 @@ textarea {
         padding: 0;
         -webkit-border-radius: 0 0 10px 10px;
         border-radius: 0 0 10px 10px;
-        background-image: linear-gradient(to top, #270722, #1d0518);
+        background-image: linear-gradient(to top, #481422, #23051e);
         -webkit-box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
         box-shadow: 15px 0 25px 0 rgba(0, 0, 0, .3);
     }
@@ -3225,13 +3225,13 @@ textarea {
         width: 100%;
         padding: 18px 20px;
         display: block;
-        border-bottom: solid 1px rgba(255, 186, 0, .1);
+        border-bottom: solid 2px rgba(189, 189, 189, 0.1);
         font-weight: 900;
     }
     .primary-menu-responsive .primary-menu-menu>li:first-of-type {
         width: 100%;
         padding: 10px;
-        border-bottom: solid 1px rgba(255, 186, 0, .1);
+        border-bottom: solid 2px rgba(189, 189, 189, 0.1);
     }
     #bdns-search {
         height: 32px;
@@ -3241,7 +3241,7 @@ textarea {
         display: none;
     }
     .primary-menu-responsive .primary-menu-menu>li:first-child>a {
-        border-top: solid 1px rgba(255, 186, 0, .1);
+        border-top: solid 2px rgba(189, 189, 189, 0.1);
     }
     .primary-menu-responsive .primary-menu-menu>li:nth-last-child(2)>a {
         border-bottom: none;
@@ -3268,14 +3268,14 @@ textarea {
     .primary-menu-responsive .primary-menu-menu ul.sub-menu li a {
         padding: 10px 30px;
         font-size: 14px;
-        border-bottom: solid 1px rgba(255, 186, 0, .1);
+        border-bottom: solid 2px rgba(189, 189, 189, 0.1);
         position: relative;
     }
     .primary-menu-responsive .primary-menu-menu ul.sub-menu.sub-menu--with-icons {
         padding-bottom: 0;
     }
     .primary-menu-responsive .primary-menu-menu ul.sub-menu.sub-menu--with-icons li:last-child a {
-        border-bottom: solid 1px rgba(255, 186, 0, .1);
+        border-bottom: solid 2px rgba(189, 189, 189, 0.1);
     }
     .primary-menu-responsive .primary-menu-menu.primary-menu-indented>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
         padding-left: 80px!important;
@@ -3295,7 +3295,7 @@ textarea {
         font-size: 14px;
         text-align: center;
         line-height: 53px;
-        border-left: solid 1px rgba(255, 186, 0, .1);
+        border-left: solid 2px rgba(189, 189, 189, 0.1);
     }
     .primary-menu-responsive .primary-menu-menu li .indicator:after {
         content: '';
