@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Alterdot - a decentralized Web.</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+	<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
+	<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
+</head>
+
+<body class="adsite-grid">
+
+<div class="container">
+    <div class="row">
+        <div class="align-center medium-padding120">
+            <header class="adsite-module adsite-heading heading--h1 heading--with-decoration">
+                <h1 class="heading-title f-size-90 weight-normal no-margin pb30">not found
+                <span class="weight-bold">404</span></h1>
+                <h4 id="main-message" class="c-primary pb30">The content you tried to access does not exist.</h4>
+            </header>
+            <a data-scroll href="https://alterdot.network" class="btn btn--large btn--transparent btn--secondary">
+                <i class="fas fa-arrow-left adot-icon"></i>
+                &ensp;Go back to website
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer id="site-footer" class="footer ">
+
+	<canvas id="can"></canvas>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="widget w-info">
+					<a href="https://alterdot.network" class="site-logo">
+						<img src="img/logo-primary.png" alt="Alterdot">
+					</a>
+					<p>Get in touch with us and take part in the creation of a freer internet.</p>
+				</div>
+
+				<div class="widget w-contacts">
+					<ul class="socials socials--white">
+						<li class="social-item">
+							<a href="https://discord.com/invite/86eTp6m7p9">
+								<i class="fab fa-discord adot-icon"></i>
+							</a>
+						</li>
+
+                        <li class="social-item">
+							<a href="https://twitter.com/AlterdotNetwork">
+								<i class="fab fa-twitter adot-icon"></i>
+							</a>
+						</li>
+
+                        <li class="social-item">
+							<a href="https://alterdot.medium.com/">
+								<i class="fab fa-medium adot-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="https://bitcointalk.org/index.php?topic=5217044">
+								<i class="fab fa-bitcoin adot-icon"></i>
+							</a>
+						</li>
+
+                        <li class="social-item">
+							<a href="https://github.com/Alterdot">
+								<i class="fab fa-github adot-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+                    <br>
+                    <span>All the information contained in this website is for general information purposes only. Any responsability for losses and/or damages caused by the usage of this website or the presented software is beared by the user.</span>
+                    <br>
+                    <span>Copyright © 2021-2022 Alterdot (ADOT) Developers. All Rights Reserved.</span>
+					<span>Alterdot - a decentralized Web.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a class="back-to-top" href="#">
+		<svg class="adot-icon icon-top-arrow" viewBox="0 0 512 512">
+			<path d="m454 383l-171-174c-3-2-5-4-7-6-9-9-20-14-31-14-11 0-22 5-31 14-3 2-5 4-5 6l-173 174c-9 9-14 20-14 31 0 11 5 22 14 31 17 18 44 18 60 0l149-149 149 149c18 18 45 18 60 0 18-20 18-47 0-62z m-354-261l290 0c17 0 33-15 33-33 0-18-16-33-33-33l-290 0c-18 0-33 15-33 33 0 18 15 33 33 33z"></path>
+		</svg>
+	</a>
+</footer>
+
+<!-- End Footer -->
+
+<!-- jQuery first, then other JS -->
+
+<script defer src="fonts/fontawesome-all.js"></script>
+<script>
+	function updateError() {
+		const hash = window.location.hash;
+        const mainMessage = document.getElementById('main-message');
+
+        console.log("here", hash);
+
+		switch (hash) {
+			case "#domain-not-found":
+				mainMessage.innerHTML = "The domain you are looking for does not exist.";
+				break;
+
+			case "#resolution-error":
+                mainMessage.innerHTML = "Error encountered on domain resolution, contact the developers!";
+				break;
+
+			default:
+                mainMessage.innerHTML = "The content you tried to access does not exist.";
+				break;
+		}
+	}
+
+	updateError();
+</script>
+</body>
+
+</html>
